@@ -1,10 +1,10 @@
 ```
-                                     __               
-                         _________ _/ /___ _____      
-                        / ___/ __ `/ / __ `/ __ \     
-                       / /  / /_/ / / /_/ / /_/ /     
-                      /_/   \__,_/_/\__, /\____/      
-                                   /____/             
+                                           __               
+                               _________ _/ /___ _____      
+                              / ___/ __ `/ / __ `/ __ \     
+                             / /  / /_/ / / /_/ / /_/ /     
+                            /_/   \__,_/_/\__, /\____/      
+                                         /____/             
 ```
 
 Public research repository for **ralgo**, an algorithmic trading system focused on BTC futures.
@@ -38,15 +38,6 @@ This repo may include:
 - monthly performance summary,
 - forward-test screenshots,
 - aggregated CSV statistics.
-
-It does not include:
-
-- strategy source code,
-- Pine Script files,
-- webhook URLs,
-- API keys,
-- exact entry/exit logic,
-- full private trade logs.
 
 ## Risk notice
 
