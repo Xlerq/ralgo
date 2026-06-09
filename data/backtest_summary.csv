@@ -1,0 +1,19 @@
+metric,value
+source_file,Trades.csv
+generated_from,public aggregated exit trades only
+trades,524
+net_pnl_usdt,547.26
+gross_profit_usdt,1057.08
+gross_loss_usdt,-509.82
+profit_factor,2.073
+win_rate_pct,42.94
+avg_trade_usdt,1.04
+median_trade_usdt,-0.05
+best_trade_usdt,60.9
+worst_trade_usdt,-11.07
+closed_trade_max_drawdown_usdt,33.53
+margin_calls,0
+top5_winners_usdt,269.49
+top10_winners_usdt,402.0
+start_date,2020-07-23
+end_date,2026-06-06
