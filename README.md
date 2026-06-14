@@ -4,7 +4,7 @@ Public evidence repository for **ralgo**, a BTC futures algorithmic trading syst
 
 ## Verified Headline
 
-Current recommended public headline: **+518.40% net return**, **11.39% max drawdown**, **PF 2.091**, **510 trades** on `BINANCE:BTCUSDT.P` 15m, measured in TradingView Deep Backtesting with 0.05% taker fee plus 0.02% modeled slippage per side.
+Current recommended public headline: **+623.91% net return**, **10.86% max drawdown**, **PF 2.265**, **510 trades** on `BINANCE:BTCUSDT.P` 15m, measured in TradingView Deep Backtesting with 0.05% taker fee plus 0.02% modeled slippage per side.
 
 Funding is not measured by TradingView. The analytical funding layer moves the realistic all-in estimate to roughly **+375% to +450%** net return, with a central anchor near **+374.4%**. Treat every number here as backtest evidence, not a live-return expectation.
 
