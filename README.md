@@ -14,6 +14,12 @@ Current recommended public headline: **+623.91% net return**, **10.86% max drawd
 
 Funding is not measured by TradingView. The analytical funding layer moves the realistic all-in estimate to roughly **+375% to +450%** net return, with a central anchor near **+374.4%**. Treat every number here as backtest evidence, not a live-return expectation.
 
+| Regime | Start equity (USDT) | End equity (USDT) | Net PnL (USDT) | Return % | Closed trades | 
+|---|---:|---:|---:|---:|---|
+| 2020-01-01 -> 2022-01-01 | 1,000.00 | 1,925.98 | 925.98 | 92.60% | 142 |
+| 2022-01-01 -> 2024-01-01 | 1,925.98 | 3,071.70 | 1,145.72 | 59.49% | 168 | 
+| 2024-01-01 -> latest* | 3,071.70 | 7,239.07 | 4,167.37 | 135.67% | 200 |
+
 ## Evidence Pack
 
 - [`performance/`](performance/) - canonical methodology, limitations, metrics, tables, charts, raw runs, and audit logs.
