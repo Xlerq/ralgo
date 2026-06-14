@@ -1,0 +1,107 @@
+section,bucket,rank,metric,value,unit,trade_number,direction,entry_time,exit_time,holding_hours,net_pnl_usdt,net_pnl_pct_trade_value,note
+data_integrity,,,csv_rows,1020,rows,,,,,,,,
+data_integrity,,,parsed_trades,510,trades,,,,,,,,
+data_integrity,,,parse_issues,0,issues,,,,,,,,
+data_integrity,,,first_exit_time,2020-07-23 14:15:00,timestamp,,,,,,,,
+data_integrity,,,last_exit_time,2026-06-10 09:30:00,timestamp,,,,,,,,
+data_integrity,,,initial_capital_inferred_from_cumulative_columns,999.9951916,USDT,,,,,,,,rounded to 1000.00 for equity-return calculations because the inferred value is within one cent
+user_verified_headline,,,net_return_pct,623.91,pct,,,,,,,,"user-supplied verified TradingView headline; included for comparison, not recomputed from the CSV"
+user_verified_headline,,,max_drawdown_pct,10.86,pct,,,,,,,,"user-supplied verified TradingView headline; included for comparison, not recomputed from the CSV"
+user_verified_headline,,,profit_factor,2.265,,,,,,,,,"user-supplied verified TradingView headline; included for comparison, not recomputed from the CSV"
+user_verified_headline,,,cagr_pct,35.89,pct,,,,,,,,"user-supplied verified TradingView headline; included for comparison, not recomputed from the CSV"
+user_verified_headline,,,trades,510,,,,,,,,,"user-supplied verified TradingView headline; included for comparison, not recomputed from the CSV"
+csv_reconstruction,,,final_cumulative_pnl_usdt,6239.07,USDT,,,,,,,,
+csv_reconstruction,,,final_equity_usdt,7239.07,USDT,,,,,,,,
+csv_reconstruction,,,total_return_pct_from_cumulative_pnl,623.907,pct,,,,,,,,
+csv_reconstruction,,,rounded_trade_pnl_sum_usdt,6239.12,USDT,,,,,,,,sum of rounded per-trade Net PnL values
+csv_reconstruction,,,rounding_difference_sum_minus_cumulative_usdt,0.05,USDT,,,,,,,,small difference caused by TradingView CSV rounding
+overall,,,gross_profit_usdt,11172.82,USDT,,,,,,,,
+overall,,,gross_loss_usdt_abs,4933.7,USDT,,,,,,,,
+overall,,,profit_factor_from_rounded_trade_pnl,2.264592497,ratio,,,,,,,,
+overall,,,winners,223,trades,,,,,,,,
+overall,,,losers,287,trades,,,,,,,,
+overall,,,win_rate_pct,43.7254902,pct,,,,,,,,
+overall,,,mean_trade_pnl_usdt,12.23356863,USDT,,,,,,,,
+overall,,,median_trade_pnl_usdt,-0.45,USDT,,,,,,,,
+overall,,,avg_win_usdt,50.10233184,USDT,,,,,,,,
+overall,,,avg_loss_usdt,-17.19059233,USDT,,,,,,,,
+overall,,,payoff_ratio_avg_win_abs_avg_loss,2.914520388,ratio,,,,,,,,
+drawdown,,,csv_closed_trade_max_drawdown_pct,10.28811424,pct,,,,,,,,closed-trade equity from cumulative PnL column; not intrabar/floating-equity drawdown
+drawdown,,,csv_closed_trade_max_drawdown_usdt,122.48,USDT,,,,,,,,
+drawdown,,,max_drawdown_peak_trade,6,trade,6,long,2020-07-25 13:15:00,2020-07-26 10:15:00,21,158.35,4.32,
+drawdown,,,max_drawdown_trough_trade,25,trade,25,long,2020-09-27 16:15:00,2020-09-28 23:15:00,31,0.3,0.41,
+direction_attribution,long,,trade_count,346,trades,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,long,,net_pnl_usdt,4216.73,USDT,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,long,,return_on_initial_capital_pct,421.673,pct,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,long,,gross_profit_usdt,7723.11,USDT,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,long,,gross_loss_usdt_abs,3506.38,USDT,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,long,,profit_factor,2.202587854,ratio,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,long,,winners,154,trades,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,long,,losers,192,trades,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,long,,win_rate_pct,44.50867052,pct,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,long,,avg_pnl_usdt,12.18708092,USDT,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,long,,median_pnl_usdt,-0.42,USDT,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,short,,trade_count,164,trades,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,short,,net_pnl_usdt,2022.39,USDT,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,short,,return_on_initial_capital_pct,202.239,pct,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,short,,gross_profit_usdt,3449.71,USDT,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,short,,gross_loss_usdt_abs,1427.32,USDT,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,short,,profit_factor,2.416914217,ratio,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,short,,winners,69,trades,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,short,,losers,95,trades,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,short,,win_rate_pct,42.07317073,pct,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,short,,avg_pnl_usdt,12.33164634,USDT,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+direction_attribution,short,,median_pnl_usdt,-0.72,USDT,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation
+best_trades,,1,ranked_best_trade,1,rank,452,long,2025-10-25 19:15:00,2025-10-27 07:15:00,36,651.12,3.74,post-hoc attribution from the full exported trade list; not independent validation
+best_trades,,2,ranked_best_trade,2,rank,428,long,2025-07-10 15:15:00,2025-07-10 21:30:00,6.25,610.57,4.17,post-hoc attribution from the full exported trade list; not independent validation
+best_trades,,3,ranked_best_trade,3,rank,48,long,2020-12-16 09:15:00,2020-12-17 09:30:00,24.25,609.21,17.21,post-hoc attribution from the full exported trade list; not independent validation
+best_trades,,4,ranked_best_trade,4,rank,416,long,2025-04-21 20:15:00,2025-04-23 08:15:00,36,571.62,8.12,post-hoc attribution from the full exported trade list; not independent validation
+best_trades,,5,ranked_best_trade,5,rank,496,short,2026-06-01 07:00:00,2026-06-03 04:00:00,45,418.14,9.87,post-hoc attribution from the full exported trade list; not independent validation
+best_trades,,6,ranked_best_trade,6,rank,248,long,2023-01-20 13:15:00,2023-01-21 10:15:00,21,313.23,7.64,post-hoc attribution from the full exported trade list; not independent validation
+best_trades,,7,ranked_best_trade,7,rank,474,short,2026-02-04 15:15:00,2026-02-06 00:45:00,33.5,295.34,14.69,post-hoc attribution from the full exported trade list; not independent validation
+best_trades,,8,ranked_best_trade,8,rank,272,long,2023-06-20 16:15:00,2023-06-21 17:00:00,24.75,288.96,10.08,post-hoc attribution from the full exported trade list; not independent validation
+best_trades,,9,ranked_best_trade,9,rank,344,long,2024-05-20 16:15:00,2024-05-21 14:15:00,22,241.04,4.31,post-hoc attribution from the full exported trade list; not independent validation
+best_trades,,10,ranked_best_trade,10,rank,338,long,2024-05-15 10:15:00,2024-05-16 15:00:00,28.75,239.32,4.54,post-hoc attribution from the full exported trade list; not independent validation
+worst_trades,,1,ranked_worst_trade,1,rank,454,long,2025-11-02 12:15:00,2025-11-02 13:15:00,1,-121.02,-0.78,post-hoc attribution from the full exported trade list; not independent validation
+worst_trades,,2,ranked_worst_trade,2,rank,446,long,2025-09-17 06:15:00,2025-09-17 12:30:00,6.25,-106.48,-0.88,post-hoc attribution from the full exported trade list; not independent validation
+worst_trades,,3,ranked_worst_trade,3,rank,492,long,2026-05-10 23:15:00,2026-05-11 03:15:00,4,-104.78,-2.27,post-hoc attribution from the full exported trade list; not independent validation
+worst_trades,,4,ranked_worst_trade,4,rank,440,long,2025-09-08 22:15:00,2025-09-09 00:15:00,2,-103.39,-0.58,post-hoc attribution from the full exported trade list; not independent validation
+worst_trades,,5,ranked_worst_trade,5,rank,489,short,2026-04-05 13:00:00,2026-04-05 15:15:00,2.25,-87.29,-0.7,post-hoc attribution from the full exported trade list; not independent validation
+worst_trades,,6,ranked_worst_trade,6,rank,426,long,2025-07-03 14:15:00,2025-07-04 07:15:00,17,-87.03,-1.19,post-hoc attribution from the full exported trade list; not independent validation
+worst_trades,,7,ranked_worst_trade,7,rank,434,long,2025-08-04 14:15:00,2025-08-05 04:15:00,14,-80.07,-0.83,post-hoc attribution from the full exported trade list; not independent validation
+worst_trades,,8,ranked_worst_trade,8,rank,348,long,2024-06-28 02:15:00,2024-06-28 07:30:00,5.25,-79.8,-0.83,post-hoc attribution from the full exported trade list; not independent validation
+worst_trades,,9,ranked_worst_trade,9,rank,360,long,2024-08-18 03:15:00,2024-08-18 03:45:00,0.5,-78.61,-0.82,post-hoc attribution from the full exported trade list; not independent validation
+worst_trades,,10,ranked_worst_trade,10,rank,386,long,2024-11-22 12:15:00,2024-11-22 13:15:00,1,-78.55,-0.85,post-hoc attribution from the full exported trade list; not independent validation
+streaks,,,longest_winning_streak,10,trades,,,,,,,,285 to 294; PnL 199.44 USDT
+streaks,,,longest_losing_streak,18,trades,,,,,,,,117 to 134; PnL -179.29 USDT
+top_trade_dependency,top_1,,top_1_trade_pnl_sum,651.12,USDT,,,,,,,,best trades by rounded Net PnL
+top_trade_dependency,top_1,,top_1_share_of_total_net_pnl_pct,10.43608714,pct,,,,,,,,
+top_trade_dependency,top_1,,top_1_share_of_gross_profit_pct,5.827714042,pct,,,,,,,,
+top_trade_dependency,top_1,,net_pnl_without_top_1_trades,5588,USDT,,,,,,,,
+top_trade_dependency,top_1,,net_return_without_top_1_trades_pct,558.8,pct,,,,,,,,
+top_trade_dependency,top_1,,profit_factor_without_top_1_trades,2.132618522,ratio,,,,,,,,
+top_trade_dependency,top_5,,top_5_trade_pnl_sum,2860.66,USDT,,,,,,,,best trades by rounded Net PnL
+top_trade_dependency,top_5,,top_5_share_of_total_net_pnl_pct,45.85037634,pct,,,,,,,,
+top_trade_dependency,top_5,,top_5_share_of_gross_profit_pct,25.60374194,pct,,,,,,,,
+top_trade_dependency,top_5,,net_pnl_without_top_5_trades,3378.46,USDT,,,,,,,,
+top_trade_dependency,top_5,,net_return_without_top_5_trades_pct,337.846,pct,,,,,,,,
+top_trade_dependency,top_5,,profit_factor_without_top_5_trades,1.684772078,ratio,,,,,,,,
+top_trade_dependency,top_10,,top_10_trade_pnl_sum,4238.55,USDT,,,,,,,,best trades by rounded Net PnL
+top_trade_dependency,top_10,,top_10_share_of_total_net_pnl_pct,67.93506135,pct,,,,,,,,
+top_trade_dependency,top_10,,top_10_share_of_gross_profit_pct,37.9362596,pct,,,,,,,,
+top_trade_dependency,top_10,,net_pnl_without_top_10_trades,2000.57,USDT,,,,,,,,
+top_trade_dependency,top_10,,net_return_without_top_10_trades_pct,200.057,pct,,,,,,,,
+top_trade_dependency,top_10,,profit_factor_without_top_10_trades,1.405490808,ratio,,,,,,,,
+trade_pnl_distribution,,,min,-121.02,USDT,,,,,,,,
+trade_pnl_distribution,,,p01,-86.4036,USDT,,,,,,,,
+trade_pnl_distribution,,,p05,-55.3565,USDT,,,,,,,,
+trade_pnl_distribution,,,p10,-35.686,USDT,,,,,,,,
+trade_pnl_distribution,,,p25,-9.7975,USDT,,,,,,,,
+trade_pnl_distribution,,,p50,-0.45,USDT,,,,,,,,
+trade_pnl_distribution,,,p75,9.18,USDT,,,,,,,,
+trade_pnl_distribution,,,p90,58.762,USDT,,,,,,,,
+trade_pnl_distribution,,,p95,125.548,USDT,,,,,,,,
+trade_pnl_distribution,,,p99,311.6199,USDT,,,,,,,,
+trade_pnl_distribution,,,max,651.12,USDT,,,,,,,,
+trade_pnl_distribution,,,mean,12.23356863,USDT,,,,,,,,
+trade_pnl_distribution,,,std,75.51185131,USDT,,,,,,,,

@@ -1,0 +1,5 @@
+holding_bucket,trade_count,pct_of_trades,net_pnl_usdt,return_on_initial_capital_pct,gross_profit_usdt,gross_loss_usdt,profit_factor,winners,losers,scratch,win_rate_pct,avg_pnl_usdt,median_pnl_usdt,avg_holding_hours,median_holding_hours,best_trade_number,best_trade_pnl_usdt,worst_trade_number,worst_trade_pnl_usdt,attribution_label
+<6h,203,39.80392157,-1707.6,-170.76,1372.47,3080.07,0.4455970157,64,139,0,31.5270936,-8.41182266,-3.07,2.871921182,2.5,501,143.31,454,-121.02,post-hoc attribution from the full exported trade list; not independent validation
+6-24h,247,48.43137255,2760.23,276.023,4549.92,1789.69,2.542295034,109,138,0,44.12955466,11.17502024,-0.39,12.52125506,11,428,610.57,446,-106.48,post-hoc attribution from the full exported trade list; not independent validation
+1-3d,60,11.76470588,5186.49,518.649,5250.43,63.94,82.11495152,50,10,0,83.33333333,86.4415,10.565,32.0875,33,452,651.12,326,-28.15,post-hoc attribution from the full exported trade list; not independent validation
+>3d,0,0,0,0,0,0,,0,0,0,,,,,,,,,,post-hoc attribution from the full exported trade list; not independent validation

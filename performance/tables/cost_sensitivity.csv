@@ -1,0 +1,10 @@
+scenario,type,commission_pct_per_side,roundtrip_cost_pct,funding_pct_per_8h,hold_basis,net_pct,net_usdt,max_drawdown_pct,profit_factor,win_rate_pct,trades,cagr_pct,cost_bite_vs_A_pct,notes
+A_commission_only,measured,0.05,0.10,0,n/a,623.91,6239.07,10.86,2.265,43.73,510,35.89,0.0,Binance taker only; the verified reproduction baseline
+B_fee_plus_slippage,measured,0.07,0.14,0,n/a,518.40,5184.00,11.39,2.091,42.16,510,32.61,16.9,0.05 taker + 0.02 modeled slippage per side (percent); RECOMMENDED public headline
+C_stress,measured,0.10,0.20,0,n/a,388.14,3881.40,12.33,1.865,40.59,510,27.84,37.8,0.05 taker + 0.05 stress slippage per side
+B_plus_funding_0.01_countweighted,estimated,0.07,0.14,0.01,count_weighted_11.25h,484.7,,~11.3,~2.03,,510,31.5,22.3,funding ESTIMATED; analytical layer on top of B
+B_plus_funding_0.02_countweighted,estimated,0.07,0.14,0.02,count_weighted_11.25h,450.9,,~11.3,~1.98,,510,30.3,27.7,funding ESTIMATED; analytical layer on top of B
+B_plus_funding_0.03_countweighted,estimated,0.07,0.14,0.03,count_weighted_11.25h,417.1,,~11.3,~1.93,,510,29.0,33.1,funding ESTIMATED; analytical layer on top of B
+B_plus_funding_0.01_notionalweighted,estimated,0.07,0.14,0.01,notional_weighted_24h,446.4,,~11.4,~1.97,,510,30.1,28.5,funding ESTIMATED; conservative (runner notional held longest)
+B_plus_funding_0.02_notionalweighted,estimated,0.07,0.14,0.02,notional_weighted_24h,374.4,,~11.4,~1.88,,510,27.3,40.0,funding ESTIMATED; CENTRAL realistic all-in anchor
+B_plus_funding_0.03_notionalweighted,estimated,0.07,0.14,0.03,notional_weighted_24h,302.4,,~11.5,~1.78,,510,24.1,51.5,funding ESTIMATED; conservative stress all-in

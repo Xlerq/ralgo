@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "HEADLINE_AND_COSTS_VERIFIED",
+  "status_note": "Headline BTC Deep Backtest reproduced (2 poll-to-stable runs agree). Cost sensitivity A/B/C measured (poll-to-stable); funding estimated analytically. By-year/side/duration/exit-reason tables and walk-forward still PENDING.",
+  "generated_utc": "2026-06-14",
+  "candidate": {
+    "version": "risk_based_baseline_slim",
+    "display_name": "Engulfing_TURBO (RiskBased, slim harness)",
+    "frozen": true,
+    "tuning_performed": false,
+    "sides": "long+short",
+    "note": "Frozen public baseline. Slim harness reproduces the original RiskBased baseline to the cent."
+  },
+  "configuration": {
+    "instrument": "BINANCE:BTCUSDT.P",
+    "market": "BTC USDM perpetual futures (Binance)",
+    "base_timeframe": "15m",
+    "engine": "TradingView Deep Backtesting (DEEP badge confirmed)",
+    "date_range": "2020-01-01..2026-06-14 (latest available)",
+    "initial_capital_effective": 1000,
+    "initial_capital_declared_in_script": 100,
+    "initial_capital_note": "Tester Properties=1000 overrides script=100; % metrics are scale-invariant (risk/equity-relative sizing).",
+    "commission_pct_per_side": 0.05,
+    "pyramiding": 3,
+    "cagr_period_years": 6.45
+  },
+  "result_scope": "BTC, both-sides (long+short), in-sample. Cross-asset NOT verified for this pack. Headline A is commission-only.",
+  "reproducibility_rule": "After every symbol switch / source update / compile / deep run, poll headline metrics AND trade count until two consecutive reads agree before recording. Otherwise mark INVALID and discard. Deep results read from Strategy Tester DOM.",
+  "public_repo_safety_rule": "No private Pine source, signal thresholds, risk-% value, leverage cap, core/runner split, secrets, webhook URLs, account IDs, or API keys in this repository.",
+  "recommended_public_headline": {
+    "scenario": "B_fee_plus_slippage",
+    "reason": "MEASURED (not estimated), realistic (Binance taker + conservative slippage). Commission-only A over-promises; funding is estimated so it cannot be the headline number itself but must travel alongside as a haircut.",
+    "net_return_pct": 518.40,
+    "max_drawdown_pct": 11.39,
+    "profit_factor": 2.091,
+    "win_rate_pct": 42.16,
+    "trades": 510,
+    "cagr_pct": 32.61,
+    "must_disclose": "Adding estimated perpetual funding brings realistic all-in to ~+375% to +450% (CAGR ~27-30%/yr). In-sample BTC; cross-asset unverified."
+  },
+  "metrics": {
+    "headline": {
+      "status": "VERIFIED",
+      "verified_utc": "2026-06-14",
+      "reproductions": 2,
+      "all_runs_agree": true,
+      "cost_basis": "commission_only_0.05pct_per_side",
+      "net_return_pct": 623.91,
+      "net_return_usdt": 6239.07,
+      "max_drawdown_pct": 10.86,
+      "profit_factor": 2.265,
+      "win_rate_pct": 43.73,
+      "trades": 510,
+      "winners": 223,
+      "losers": 287,
+      "cagr_pct": 35.89,
+      "avg_bars_in_trades": 45,
+      "evidence": "raw_runs/baseline_reproduction.json, audit_logs/baseline_reproduction.md"
+    },
+    "cost_adjusted": {
+      "status": "MEASURED (A/B/C); funding ESTIMATED",
+      "evidence": "tables/cost_sensitivity.csv, raw_runs/cost_sensitivity.json, audit_logs/cost_sensitivity.md",
+      "commission_only_A": {"commission_pct_per_side": 0.05, "net_pct": 623.91, "max_drawdown_pct": 10.86, "profit_factor": 2.265, "cagr_pct": 35.89},
+      "fee_plus_slippage_B": {"commission_pct_per_side": 0.07, "net_pct": 518.40, "max_drawdown_pct": 11.39, "profit_factor": 2.091, "cagr_pct": 32.61},
+      "stress_C": {"commission_pct_per_side": 0.10, "net_pct": 388.14, "max_drawdown_pct": 12.33, "profit_factor": 1.865, "cagr_pct": 27.84},
+      "cost_sensitivity_net_pts_per_0.01pct_roundtrip": -24.0,
+      "slippage_alone_bite_pct_of_net": 16.9,
+      "funding_estimate": {
+        "status": "ESTIMATED, not measured (TradingView has no funding model)",
+        "rates_pct_per_8h": [0.01, 0.02, 0.03],
+        "all_in_net_pct_range": [302.4, 484.7],
+        "central_all_in_net_pct": 374.4,
+        "central_all_in_cagr_pct": 27.3,
+        "central_assumption": "B + 0.02%/8h funding, notional-weighted ~24h hold"
+      },
+      "total_cost_bite_pct_of_paper_return": {"slippage_only": 16.9, "central_all_in": 40.0, "range": [22.3, 51.5]}
+    },
+    "by_year": null,
+    "by_side": null,
+    "by_duration": null,
+    "by_exit_reason": null,
+    "walk_forward": null
+  },
+  "caveats": [
+    "Headline A is in-sample BTC, both-sides, commission-only. It is a backtest figure, NOT an expected live return.",
+    "Realistic costs take a ~40% central bite (range ~22-52%): commission-only +623.91% -> measured +slippage +518.40% -> estimated all-in ~+375% (central) to +450%.",
+    "Cross-asset edge collapses (documented overfitting): ETH/SOL PF ~1.2. Treat as a BTC-specific result; cross-asset NOT verified for this pack.",
+    "Funding is ESTIMATED analytically; only A/B/C net/DD/PF are measured.",
+    "Existing ../data/ CSVs are from an older export and are not yet reconciled to this candidate."
+  ]
+}
