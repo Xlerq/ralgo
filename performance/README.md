@@ -1,11 +1,11 @@
-# ralgo — Performance Pack
+# ralgo - Performance Pack
 
 Public, reproducible performance evidence for the **ralgo** BTC-futures strategy.
 
 > **Status: HEADLINE + COSTS VERIFIED.** The headline BTC Deep Backtest and the cost
 > sensitivity (A/B/C) are reproduced and poll-to-stable. Funding is estimated analytically.
-> By-year/side/duration/exit-reason tables and walk-forward are still pending. See
-> [`public_metrics.json`](public_metrics.json).
+> Scenario A attribution tables/charts are generated from the exported trade list. Walk-forward
+> and exit-reason attribution are still pending. See [`public_metrics.json`](public_metrics.json).
 
 ## Candidate under test
 
@@ -22,7 +22,7 @@ Public, reproducible performance evidence for the **ralgo** BTC-futures strategy
 The strategy is treated as **frozen**. This pack measures it; it does **not** optimize,
 tune, or search for better settings.
 
-## Verified result (so far)
+## Verified Result
 
 **The current verified result is BTC, both-sides, in-sample.** It is a backtest, not a live
 return, and cross-asset transfer is **not** verified for this pack (see `limitations.md`).
@@ -37,6 +37,16 @@ return, and cross-asset transfer is **not** verified for this pack (see `limitat
 510 trades, all scenarios. Realistic costs remove a **~40% central bite** (range ~22–52%) from
 the commission-only figure. Full detail: [`tables/cost_sensitivity.csv`](tables/cost_sensitivity.csv).
 
+`public_metrics.json` is the single machine-readable public metrics contract. The older root-level
+commission-only JSON has been removed so consumers do not have two conflicting truth sources.
+
+## Public Charts
+
+- [`charts/equity_curve.png`](charts/equity_curve.png)
+- [`charts/drawdown_curve.png`](charts/drawdown_curve.png)
+- [`charts/monthly_returns_heatmap.png`](charts/monthly_returns_heatmap.png)
+- [`charts/trade_distribution.png`](charts/trade_distribution.png)
+
 ## Layout
 
 ```text
@@ -46,8 +56,9 @@ performance/
 ├── limitations.md       ← honest red-team: overfitting, funding-estimate risk, paper-vs-live
 ├── public_metrics.json  ← machine-readable headline + cost-adjusted metrics
 ├── raw_runs/            ← raw per-run exports + stability poll logs (baseline, cost sensitivity)
-├── tables/             ← derived CSV tables (cost_sensitivity.csv; yearly/side/duration pending)
-├── charts/             ← equity curve, drawdown, distribution charts (no private source visible)
+├── tables/              ← cost sensitivity + Scenario A attribution CSV tables
+├── simulations/         ← Monte Carlo reshuffle output
+├── charts/              ← equity curve, drawdown, heatmap, distribution charts
 └── audit_logs/         ← reproducibility logs: poll-to-stable evidence, INVALID-run records
 ```
 

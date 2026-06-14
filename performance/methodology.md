@@ -123,10 +123,11 @@ Permitted: methodology, assumptions, aggregate metrics, CSV tables, charts, JSON
 screenshots that do not reveal private source. Raw strategy source and working notes stay in the
 **private** workspace only.
 
-## 8. Outputs produced by the pack (when run)
+## 8. Outputs produced by the pack
 
-- `raw_runs/` — one record per deep run: headline metrics + the poll-to-stable trace.
-- `tables/` — yearly, by-side, by-duration, by-exit-reason, and cost-adjusted CSV tables.
-- `charts/` — equity curve, drawdown, trade-distribution charts.
-- `audit_logs/` — stability evidence and any INVALID-run records.
-- `public_metrics.json` — machine-readable headline summary (status flips to `VERIFIED`).
+- `public_metrics.json` - single machine-readable public metrics contract.
+- `raw_runs/` - one record per deep run: headline metrics plus the poll-to-stable trace.
+- `audit_logs/` - stability evidence and any INVALID-run records.
+- `tables/` - measured cost sensitivity plus Scenario A attribution CSV tables.
+- `simulations/` - Monte Carlo reshuffle output from the observed trade PnL sequence.
+- `charts/` - equity, drawdown, monthly heatmap, and trade-distribution charts.

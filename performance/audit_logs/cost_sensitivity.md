@@ -93,8 +93,9 @@ trades) is more cost-sensitive than the earlier long-only probe (−14) due to h
 
 ## Verdict
 
-Realistic costs take a **~40% central bite** out of the in-sample paper return. The edge
-**survives**: even the conservative all-in holds PF > 1.7 and CAGR > 24%/yr. But the public
-headline must NOT be the +624% commission-only figure — live expectation belongs ~40% below it.
+Realistic costs take a **~40% central bite** out of the in-sample paper return. The measured
+backtest remains profitable under these assumptions: even the conservative all-in estimate holds
+PF > 1.7 and CAGR > 24%/yr. But the public headline must NOT be the +624% commission-only figure;
+live expectation belongs ~40% below it.
 MaxDD is barely affected by cost (10.86% → 12.33% at the C extreme; funding is a smooth drag, not
 a new dip source). Funding layer numbers are ESTIMATES; A/B/C are measured.

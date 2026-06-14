@@ -68,18 +68,27 @@ headline numbers. Every item here is a reason the live result may be worse than 
   so the **effective** start is ~2020-07. Returns and trade counts implicitly exclude the first
   ~6 months. Any annualized/CAGR figure should be computed off the effective start.
 
-## 8. Candidate-vs-published-data consistency (open item)
+## 8. Scenario A attribution tables are descriptive
 
-- The existing public `../data/` CSVs were generated from an earlier trade export
-  (524 exit trades, PF ~2.07). The frozen `risk_based_baseline_slim` deep reading is
-  PF 2.265 / 510 trades (commission-only) — or PF 2.091 at the recommended fee+slippage basis.
-  These are close but **not identical** and use different units (USDT vs %) and cost bases.
-- Until the existing CSVs are regenerated from this candidate (or explicitly reconciled), treat
-  the two sources as **provisional and not yet cross-checked**.
+- The yearly, monthly, holding-time, fat-tail, and Monte Carlo tables are generated from the
+  commission-only Scenario A trade export. They are useful attribution from the full exported
+  trade list, but they are **not** separate walk-forward recomputations and they are **not** the
+  recommended public headline.
+- Closed-trade chart reconstruction gives **10.29%** max drawdown, while the verified
+  TradingView platform headline is **10.86%**. Prefer the TradingView value when quoting the
+  platform result; use chart-derived drawdown only as a closed-trade reconstruction.
+- Per-trade PnL values are rounded. The rounded trade sum differs from the final cumulative PnL
+  by **0.05 USDT**, consistent with CSV precision. This is harmless for public charts but should
+  not be treated as a new independent measurement.
+- Holding-time buckets are known only after trades close. The negative `<6h` bucket and strong
+  `1-3d` bucket are risk attribution, not executable live filters.
+- Monte Carlo uses 10,000 reshuffles of the observed trade PnL sequence. It tests path
+  dependency under this historical distribution; it does not model new market regimes, missed
+  signals, slippage, funding, exchange outages, or parameter decay.
 
 ---
 
-**Bottom line:** the BTC backtest shows a real, temporally-robust long edge, but (a) it is
-BTC-specific, (b) realistic costs remove ~40% of the paper return (measured fee+slippage −16.9%,
+**Bottom line:** the BTC backtest remains profitable under measured fee+slippage, but (a) it is
+BTC-specific, (b) realistic costs remove ~40% of the paper return (measured fee+slippage -16.9%,
 plus estimated funding), and (c) it is fat-tailed and therefore fragile to execution. Set live
 expectations well below the headline backtest figure.

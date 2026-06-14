@@ -86,6 +86,6 @@
     "Realistic costs take a ~40% central bite (range ~22-52%): commission-only +623.91% -> measured +slippage +518.40% -> estimated all-in ~+375% (central) to +450%.",
     "Cross-asset edge collapses (documented overfitting): ETH/SOL PF ~1.2. Treat as a BTC-specific result; cross-asset NOT verified for this pack.",
     "Funding is ESTIMATED analytically; only A/B/C net/DD/PF are measured.",
-    "Existing ../data/ CSVs are from an older export and are not yet reconciled to this candidate."
+    "Scenario A attribution tables/charts are generated from the exported trade list and are descriptive, not walk-forward recomputation or the recommended cost-adjusted headline."
   ]
 }

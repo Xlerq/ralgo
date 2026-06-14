@@ -1,58 +1,28 @@
-```
-                                           __               
-                               _________ _/ /___ _____      
-                              / ___/ __ `/ / __ `/ __ \     
-                             / /  / /_/ / / /_/ / /_/ /     
-                            /_/   \__,_/_/\__, /\____/      
-                                         /____/             
-```
+# ralgo
 
-Public research repository for **ralgo**, an algorithmic trading system focused on BTC futures.
+Public evidence repository for **ralgo**, a BTC futures algorithmic trading system. This repo is the auditable public record behind future SaaS access; it does not sell or publish the strategy source code.
 
-This repository contains only public research materials: backtest summaries, yearly summaries, monthly updates, screenshots, and aggregated CSV statistics.
+## Verified Headline
 
-The strategy source code, TradingView Pine Script, webhook setup, exact signal logic, and automation infrastructure are private and not included.
+Current recommended public headline: **+518.40% net return**, **11.39% max drawdown**, **PF 2.091**, **510 trades** on `BINANCE:BTCUSDT.P` 15m, measured in TradingView Deep Backtesting with 0.05% taker fee plus 0.02% modeled slippage per side.
 
-## Contents
+Funding is not measured by TradingView. The analytical funding layer moves the realistic all-in estimate to roughly **+375% to +450%** net return, with a central anchor near **+374.4%**. Treat every number here as backtest evidence, not a live-return expectation.
 
-```text
-.
-├── README.md
-├── data/
-│   ├── backtest_summary.csv
-│   ├── yearly_summary.csv
-│   └── monthly_summary.csv
-└── screenshots/
-    ├── backtest_summary.png
-    ├── yearly_summary.png
-    ├── monthly_summary_YYYY_MM.png
-    └── forward_test_status.png
-```
+## Evidence Pack
 
-## Published data
+- [`performance/`](performance/) - canonical methodology, limitations, metrics, tables, charts, raw runs, and audit logs.
+- [`performance/public_metrics.json`](performance/public_metrics.json) - single machine-readable public metrics contract.
+- [`performance/charts/`](performance/charts/) - public charts with no private source visible.
+- [`reports/monthly/`](reports/monthly/) - monthly public summaries.
 
-This repo may include:
+## Public Safety Boundary
 
-- backtest summary,
-- yearly performance summary,
-- monthly performance summary,
-- forward-test screenshots,
-- aggregated CSV statistics.
+This repository may contain aggregate metrics, charts, CSV tables, audit logs, methodology notes, and monthly reports. It must not contain private Pine Script source, exact signal thresholds, webhook URLs, account IDs, API keys, or automation infrastructure.
 
-## Risk notice
+## Risk Notice
 
-Trading futures, crypto assets, and leveraged instruments involves high risk.
-
-Backtests, screenshots, and forward-test results do not guarantee future performance.
-
-This repository is for informational and educational purposes only. Nothing here is financial advice, investment advice, a recommendation, or a guarantee of profit.
+Trading leveraged crypto futures is high risk. Backtests can fail in live execution because of funding, slippage, missed fills, exchange outages, liquidity, regime changes, and overfitting. Nothing in this repository is financial advice, investment advice, a recommendation, or a guarantee of profit.
 
 ## License
 
-All rights reserved.
-
-The materials in this repository are published for public research visibility only.
-
-The underlying strategy, signal logic, Pine Script code, webhook setup, and automation infrastructure are proprietary and not licensed for public use.
-
-Copyright © ralgo. All rights reserved.
+All rights reserved. Public materials are published for research visibility only; the underlying strategy and automation remain proprietary.
