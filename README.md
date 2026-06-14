@@ -1,5 +1,11 @@
-# ralgo
-
+```
+                                             __               
+                                 _________ _/ /___ _____      
+                                / ___/ __ `/ / __ `/ __ \     
+                               / /  / /_/ / / /_/ / /_/ /     
+                              /_/   \__,_/_/\__, /\____/      
+                                           /____/             
+```
 Public evidence repository for **ralgo**, a BTC futures algorithmic trading system. This repo is the auditable public record behind future SaaS access; it does not sell or publish the strategy source code.
 
 ## Verified Headline
